@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>FDS</title>
-  <!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
 </head>
@@ -57,23 +57,27 @@
         </p>
     </div>
 </section>
-<section>
-        <form class="feedback-form">
-            <h5 class="feedback-form__title">Пожалуйста, заполните поля и наш менеджер<br>
-                свяжется с вами для уточнения деталей заказа</h5>
-            <label for="name" class="feedback-form__name-label">Имя</label>
-            <input id="name" class="feedback-form__name-input" type="text">
-            <label for="phone" class="feedback-form__phone-label">Телефон</label>
-            <input id="phone" class="feedback-form__phone-input" type="tel" placeholder="+7 (999) 999-99-99">
-            <label for="email" class="feedback-form__email-label">Почта</label>
-            <input id="email" class="feedback-form__email-input" type="email" placeholder="email@mail.ru">
-            <label for="comment" class="feedback-form__comment-label">Комментарий</label>
-            <textarea id="comment"  class="feedback-form__comment-input" name="textComment"></textarea>
-            <button class="feedback-form__submit" type="submit">Отправить запрос</button>
-            <p class="feedback-form__agreement">Нажимая кнопку"Отправить запрос", вы принимаетеусловия<a href="#">Оферты</a> и <a href="#">Политики
+<section class="feedback-form__wrapper">
+    <form class="feedback-form">
+        <h5 class="feedback-form__title">Пожалуйста, заполните поля и наш менеджер<br>
+            свяжется с вами для уточнения деталей заказа</h5>
+        <label for="name" class="feedback-form__name-label">Имя</label>
+        <input id="name" class="feedback-form__name-input" name="name" type="text">
+        <label for="phone" class="feedback-form__phone-label">Телефон</label>
+        <input id="phone" class="feedback-form__phone-input" name="tel" type="tel" placeholder="+7 (999) 999-99-99">
+        <label for="email" class="feedback-form__email-label">Почта</label>
+        <input id="email" class="feedback-form__email-input" name="email" type="email" placeholder="email@mail.ru">
+        <label for="comment" class="feedback-form__comment-label">Комментарий</label>
+        <textarea id="comment" class="feedback-form__comment-input" name="textComment"></textarea>
+        <button class="feedback-form__submit" type="submit">Отправить запрос</button>
+        <p class="feedback-form__agreement">Нажимая кнопку"Отправить запрос", вы принимаетеусловия<a href="#">Оферты</a>
+            и <a href="#">Политики
                 Конфиденциальности</a></p>
-            <img class="feedback-form__img-back" src="img/knives__back-form.png" alt="knives picture">
-        </form>
+        <picture>
+            <source media="(max-width: 680px)" srcset="img/knives__back-form--mobile.png">
+            <img class="feedback-form__img-back" src="img/knives__back-form--desktop.png" alt="knives picture">
+        </picture>
+    </form>
 </section>
 </body>
 </html>

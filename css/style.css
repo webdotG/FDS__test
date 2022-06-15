@@ -220,11 +220,15 @@ a {
 
 @media (max-width: 680px) {
 
-    .breadcrumbs{
+    .containers{
+        width: 360px;
+        margin: 0 auto;
+    }
+    .breadcrumbs {
         display: none;
     }
 
-    .mobile-back-btn{
+    .mobile-back-btn {
         display: block;
         margin-left: 16px;
         padding: 0;
@@ -242,12 +246,14 @@ a {
         background-repeat: no-repeat;
         background-position: left;
     }
-    .knives-on-order{
+
+    .knives-on-order {
         width: 328px;
         padding-left: 16px;
         padding-right: 16px;
     }
-    .knives-on-order__title{
+
+    .knives-on-order__title {
         margin: 0;
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -257,13 +263,13 @@ a {
         color: #181717;
     }
 
-    .knives-on-order p{
+    .knives-on-order p {
         width: 328px;
     }
 
     .knives-on-order__paragraph-first,
     .knives-on-order__paragraph-second,
-    .knives-on-order__paragraph-third{
+    .knives-on-order__paragraph-third {
         margin: 0;
         padding-bottom: 30px;
         font-family: "Montserrat", sans-serif;
@@ -273,10 +279,47 @@ a {
         line-height: 20px;
         color: #181717;
     }
+
     .knives-on-order__paragraph-first,
-    .knives-on-order__paragraph-third{
+    .knives-on-order__paragraph-third {
         padding-top: 30px;
     }
 
+    .feedback-form {
+        width: 360px;
+        padding-left: 0;
+        margin: 0;
+    }
 
+    .feedback-form__title,
+    .feedback-form__email-input,
+    .feedback-form__comment-input,
+    .feedback-form__submit {
+        width: 328px;
+    }
+
+    .feedback-form__name-label,
+    .feedback-form__phone-label,
+    .feedback-form__email-label{
+        padding-bottom: 6px
+    }
+    .feedback-form__name-input,
+    .feedback-form__phone-input,
+    .feedback-form__email-input{
+        margin-bottom: 20px;
+    }
+
+    .feedback-form__agreement {
+        width: 328px;
+        text-align: center;
+    }
+    .feedback-form__agreement,
+    .feedback-form__comment-input,
+    .feedback-form__submit{
+        z-index: 1;
+    }
+    .feedback-form__img-back{
+        bottom: 131px;
+        opacity: 0.8;
+    }
 }

@@ -1,0 +1,282 @@
+/* --------------------Глобально скидываю стили------------------------------------------ */
+
+a {
+    text-decoration: none;
+}
+
+
+/* ----------------------Центровщик---------------------------- */
+.containers {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*---------------------------breadcrumbs*----------------------------------*/
+
+.mobile-back-btn {
+    display: none;
+}
+
+
+.breadcrumbs {
+    display: flex;
+    position: relative;
+}
+
+.breadcrumbs p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #181717;
+}
+
+.breadcrumbs-first {
+    padding-right: 25px;
+}
+
+.breadcrumbs-first::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #8F8B8A;
+    border-bottom: 1px solid #8F8B8A;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 4px;
+    left: 54px;
+}
+
+/*-----------------------knives on order---------------------------*/
+
+.knives-on-order__title {
+    margin-top: 31px;
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #181717;
+}
+
+.knives-on-order p {
+    width: 680px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #181717;
+}
+
+.knives-on-order__paragraph-first,
+.knives-on-order__paragraph-second {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.knives-on-order__paragraph-third {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/*-----------------------form feedback---------------------------*/
+
+.feedback-form {
+    width: 1308px;
+    padding-left: 131px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFBFB;
+    background-position-y: 120Px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.feedback-form__title {
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    width: 592px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #181717;
+}
+
+.feedback-form label {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #181717;
+
+}
+
+.feedback-form__name-label,
+.feedback-form__phone-label,
+.feedback-form__email-label,
+.feedback-form__comment-label {
+    padding-bottom: 6px;
+    border: none;
+    position: relative;
+}
+
+.feedback-form__name-label::after,
+.feedback-form__phone-label::after,
+.feedback-form__email-label::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 34px;
+    background-image: url("../img/icon__star-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.feedback-form__phone-label::after {
+    left: 71px;
+}
+
+.feedback-form__email-label::after {
+    left: 48px;
+}
+
+.feedback-form__name-input,
+.feedback-form__phone-input {
+    width: 330px;
+    height: 50px;
+    border: 1px solid #E3E3E3;
+}
+
+.feedback-form__email-input::placeholder,
+.feedback-form__phone-input::placeholder {
+    padding-left: 19px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8F8B8A;
+}
+
+.feedback-form__email-input {
+    width: 680px;
+    height: 50px;
+    border: 1px solid #E3E3E3;
+}
+
+.feedback-form__comment-input {
+    width: 680px;
+    height: 101px;
+    border: 1px solid #E3E3E3;
+}
+
+.feedback-form__submit {
+    display: block;
+    width: 680px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4D4B4A;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.feedback-form__agreement {
+    padding-bottom: 100px;
+}
+
+.feedback-form__img-back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+/*---------------------------------media-----------------------------------*/
+
+/*---------------------------breadcrumbs----------------------------------*/
+
+
+@media (max-width: 680px) {
+
+    .breadcrumbs{
+        display: none;
+    }
+
+    .mobile-back-btn{
+        display: block;
+        margin-left: 16px;
+        padding: 0;
+        padding-left: 20px;
+        margin-bottom: 35px;
+        border: none;
+        background-color: transparent;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #181717;
+        background-image: url("../img/icon__back.png");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .knives-on-order{
+        width: 328px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .knives-on-order__title{
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #181717;
+    }
+
+    .knives-on-order p{
+        width: 328px;
+    }
+
+    .knives-on-order__paragraph-first,
+    .knives-on-order__paragraph-second,
+    .knives-on-order__paragraph-third{
+        margin: 0;
+        padding-bottom: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #181717;
+    }
+    .knives-on-order__paragraph-first,
+    .knives-on-order__paragraph-third{
+        padding-top: 30px;
+    }
+
+
+}

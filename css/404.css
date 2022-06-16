@@ -89,6 +89,7 @@ a {
     }
 
     .alert__paragraph {
+        width: 328px;
         padding-bottom: 30px;
     }
 

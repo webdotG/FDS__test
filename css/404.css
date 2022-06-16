@@ -7,31 +7,32 @@ a {
 
 /* ----------------------Центровщик---------------------------- */
 .containers {
-    width: 960px;   /*-------на данной странице с этим центровщиком--------*/
+    width: 960px; /*-------на данной странице с этим центровщиком--------*/
     margin: 0 auto; /*--------не попадаю в размеры по макету---------------*/
-} /*-------------------------поэтому я его не использовал--------------------*/
+}
+
+/*-------------------------поэтому я его не использовал--------------------*/
 
 /*------------------------------------404-------------------------*/
 
-.alert{
+.alert {
     display: flex;
+    justify-content: space-evenly;
 }
 
-.alert__img{
+.alert__img {
     display: block;
-    margin-left: 232px;
 }
 
-.alert__text{
+.alert__text {
     width: 410px;
-    margin-left: 123px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.alert__title{
+.alert__title {
     width: 410px;
     margin: 0;
     padding-bottom: 20px;
@@ -44,10 +45,11 @@ a {
     color: #181717;
 
 }
-.alert__paragraph{
+
+.alert__paragraph {
     margin: 0;
     padding-bottom: 30px;
-    font-family: "Montserra",sans-serif;
+    font-family: "Montserra", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -56,7 +58,7 @@ a {
     color: #181717;
 }
 
-.alert__comeback-btn{
+.alert__comeback-btn {
     width: 300px;
     height: 50px;
     text-align: center;
@@ -75,28 +77,22 @@ a {
 
 @media (max-width: 680px) {
 
-    .alert{
+    .alert {
         flex-direction: column;
         align-items: center;
     }
 
-    .alert__img{
-        margin: 0;
-    }
-
-    .alert__text{
-        margin: 0;
-    }
-
-    .alert__title{
+    .alert__title {
         margin: 0;
         padding-top: 30px;
         padding-bottom: 15px;
     }
-    .alert__paragraph{
+
+    .alert__paragraph {
         padding-bottom: 30px;
     }
-    .alert__comeback-btn{
+
+    .alert__comeback-btn {
         margin-bottom: 60px;
     }
 

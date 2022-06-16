@@ -1,0 +1,104 @@
+/*--------------------------------скидываю стили----------------------*/
+
+a {
+    text-decoration: none;
+}
+
+
+/* ----------------------Центровщик---------------------------- */
+.containers {
+    width: 960px;   /*-------на данной странице с этим центровщиком--------*/
+    margin: 0 auto; /*--------не попадаю в размеры по макету---------------*/
+} /*-------------------------поэтому я его не использовал--------------------*/
+
+/*------------------------------------404-------------------------*/
+
+.alert{
+    display: flex;
+}
+
+.alert__img{
+    display: block;
+    margin-left: 232px;
+}
+
+.alert__text{
+    width: 410px;
+    margin-left: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert__title{
+    width: 410px;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #181717;
+
+}
+.alert__paragraph{
+    margin: 0;
+    padding-bottom: 30px;
+    font-family: "Montserra",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #181717;
+}
+
+.alert__comeback-btn{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #FFFFFF;
+    background: #4D4B4A;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/*-------------------------------------медиа---------------------------------------------*/
+
+@media (max-width: 680px) {
+
+    .alert{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alert__img{
+        margin: 0;
+    }
+
+    .alert__text{
+        margin: 0;
+    }
+
+    .alert__title{
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    .alert__paragraph{
+        padding-bottom: 30px;
+    }
+    .alert__comeback-btn{
+        margin-bottom: 60px;
+    }
+
+}
+

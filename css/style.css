@@ -89,9 +89,10 @@ a {
 
 .feedback-form {
     width: 1308px;
+    padding-top: 161px;
     padding-left: 131px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #FBFBFB;
     background-position-y: 120Px;
     position: relative;
@@ -110,6 +111,8 @@ a {
     line-height: 24px;
     text-align: center;
     color: #181717;
+    position: absolute;
+    top: 0;
 }
 
 .feedback-form label {
@@ -122,6 +125,13 @@ a {
 
 }
 
+.feedback-form__name-wrapper{
+    margin-right:20px;
+    margin-bottom: 20px;
+}
+.feedback-form__email-wrapper{
+    margin-bottom: 20px;
+}
 .feedback-form__name-label,
 .feedback-form__phone-label,
 .feedback-form__email-label,
@@ -140,7 +150,7 @@ a {
     height: 10px;
     position: absolute;
     top: 0;
-    left: 34px;
+    left: 40px;
     background-image: url("../img/icon__star-red.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -148,11 +158,11 @@ a {
 }
 
 .feedback-form__phone-label::after {
-    left: 71px;
+    left: 77px;
 }
 
 .feedback-form__email-label::after {
-    left: 48px;
+    left: 53px;
 }
 
 .feedback-form__name-input,
@@ -322,4 +332,11 @@ a {
         bottom: 131px;
         opacity: 0.8;
     }
+}
+
+.feedback-form{
+}
+.feedback-form div{
+display: flex;
+    flex-direction: column;
 }

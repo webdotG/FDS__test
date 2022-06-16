@@ -72,6 +72,16 @@ a {
     font-size: 16px;
 }
 
+.alert__comeback-btn:hover,
+.alert__comeback-btn:focus{
+    background: #BB9930;
+}
+
+.alert__comeback-btn:active {
+    border: 1px solid #BB9930;
+    background: white;
+    color: #BB9930;
+}
 
 /*-------------------------------------медиа---------------------------------------------*/
 
@@ -86,6 +96,8 @@ a {
         margin: 0;
         padding-top: 30px;
         padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .alert__paragraph {

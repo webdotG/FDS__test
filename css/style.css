@@ -128,14 +128,16 @@ a {
 .feedback-form__name-wrapper,
 .feedback-form__phone-wrapper,
 .feedback-form__email-wrapper,
-.feedback-form__comment-wrapper{
+.feedback-form__comment-wrapper {
     display: flex;
     flex-direction: column;
 }
+
 .feedback-form__name-wrapper {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
 .feedback-form__phone-wrapper,
 .feedback-form__email-wrapper {
     margin-bottom: 20px;
@@ -221,8 +223,36 @@ a {
     color: #FFFFFF;
 }
 
+.feedback-form__submit:hover,
+.feedback-form__submit:focus{
+    background: #BB9930;
+}
+
+.feedback-form__submit:active {
+    border: 1px solid #BB9930;
+    background: white;
+    color: #BB9930;
+}
+
 .feedback-form__agreement {
     padding-bottom: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #181717;
+
+}
+
+.feedback-form__agreement a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7A631F;
 }
 
 .feedback-form__img-back {
@@ -323,17 +353,17 @@ a {
         width: 328px;
     }
 
-    .feedback-form__title{
+    .feedback-form__title {
         top: -20px;
         font-size: 14px;
         line-height: 17px;
     }
+
     .feedback-form__name-label,
     .feedback-form__phone-label,
     .feedback-form__email-label {
         padding-bottom: 6px
     }
-
 
 
     .feedback-form__agreement {

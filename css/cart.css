@@ -5,7 +5,13 @@ a {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+
+li {
+    padding: 0;
 }
 
 
@@ -48,7 +54,8 @@ ul {
     align-items: center;
 }
 
-.cart-product__wrapper{
+
+.cart-product__wrapper {
     padding-right: 48px;
 }
 
@@ -58,6 +65,7 @@ ul {
 }
 
 .cart-text__title {
+    width: 300px;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -99,13 +107,14 @@ ul {
     color: #FF0100;
 }
 
-.cart-control-wrapper{
+.cart-control-wrapper {
     width: 106px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -65px;
 }
+
 .cart-control__btn {
     display: block;
     width: 24px;
@@ -135,21 +144,23 @@ ul {
     color: #181717;
 }
 
-.cart-price{
+.cart-price {
     width: 98px;
     padding-left: 91px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .cart-price__paragraph {
+    margin: 0;
+    margin-top: -65px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #181717;
-
 }
 
 .cart-price__sale {
@@ -161,16 +172,22 @@ ul {
     color: #FF0100;
 }
 
-.cart__btn-del-product {
+.product-remove {
+    margin-top: -66px;
+    position: relative;
+}
+
+.product-remove__btn {
     display: block;
     width: 20px;
     height: 20px;
+    margin-left: 70px;
     border: none;
     background-color: transparent;
 }
 
-.cart__btn-del-product::before,
-.cart__btn-del-product::after {
+.product-remove__btn::before,
+.product-remove__btn::after {
     content: "";
     display: block;
     width: 20px;
@@ -179,19 +196,20 @@ ul {
     position: relative;
 }
 
-.cart__btn-del-product::before {
+.product-remove__btn::before {
     transform: rotate(45deg);
     position: absolute;
 }
 
-.cart__btn-del-product::after {
+.product-remove__btn::after {
     transform: rotate(-45deg);
     position: absolute;
 }
 
-.cart__product--remove-cart {
+.product-remove__hint {
     width: 190px;
     height: 28px;
+    margin: 0;
     background: #8F8B8A;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
@@ -201,8 +219,10 @@ ul {
     font-size: 12px;
     color: #FFFFFF;
     text-align: center;
-    vertical-align: center;
     line-height: 28px;
+    position: absolute;
+    bottom: -40px;
+    left: -98px;
 }
 
 .cart__total {
@@ -455,6 +475,9 @@ ul {
     opacity: 0.5;
 }
 
+.cart__paragraph--visual-hidden{
+    display: none;
+}
 /*-----------------------media---------------------------*/
 
 

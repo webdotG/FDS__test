@@ -4,7 +4,7 @@ a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
@@ -17,7 +17,7 @@ ul{
 
 /*-----------------------------------------------------------------*/
 
-.cart-title{
+.cart-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -27,22 +27,20 @@ ul{
     color: #181717;
 }
 
-.sorting-bloc{
+.sorting-bloc {
     width: 960px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: #FBFBFB;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #8F8B8A;
 }
-
-
 
 
 /*-----------------------form feedback---------------------------*/
@@ -58,7 +56,7 @@ ul{
     position: relative;
 }
 
-.feedback-form__btn-close{
+.feedback-form__btn-close {
     width: 20px;
     height: 20px;
     border: none;
@@ -69,23 +67,25 @@ ul{
 }
 
 .feedback-form__btn-close::before,
-.feedback-form__btn-close::after{
+.feedback-form__btn-close::after {
     content: "";
     display: block;
     width: 20px;
     height: 2px;
-    background-color:  #FBFBFB;;
+    background-color: #FBFBFB;;
     border: 1px solid black;
 }
-.feedback-form__btn-close::before{
+
+.feedback-form__btn-close::before {
     transform: rotate(45deg);
     position: absolute;
 }
 
-.feedback-form__btn-close:after{
+.feedback-form__btn-close:after {
     transform: rotate(-45deg);
     position: absolute;
 }
+
 .feedback-form__title {
     width: 438px;
     font-family: "Montserrat", sans-serif;
@@ -118,17 +118,19 @@ ul{
 }
 
 .feedback-form__name-wrapper,
-.feedback-form__phone-wrapper{
+.feedback-form__phone-wrapper {
     margin-bottom: -80px;
 }
 
 .feedback-form__name-wrapper {
     margin-right: 20px;
 }
-.feedback-form__email-wrapper{
+
+.feedback-form__email-wrapper {
     margin-bottom: -80px;
 }
-.feedback-form__comment-wrapper{
+
+.feedback-form__comment-wrapper {
     margin-bottom: -75px;
 }
 
@@ -196,12 +198,13 @@ ul{
     border: 1px solid #E3E3E3;
 }
 
-.feedback-form__submit-wrapper{
+.feedback-form__submit-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: -10px;
 }
+
 .feedback-form__submit {
     display: block;
     width: 440px;
@@ -219,7 +222,7 @@ ul{
 }
 
 .feedback-form__submit:hover,
-.feedback-form__submit:focus{
+.feedback-form__submit:focus {
     background: #BB9930;
 }
 
@@ -254,4 +257,36 @@ ul{
     right: 0;
     bottom: 0;
     opacity: 0.5;
+}
+
+/*-----------------------form feedback max width 680px---------------------------*/
+
+@media (max-width: 680px) {
+
+
+    .feedback-form {
+        width: 360px;
+        height: 730px;
+    }
+
+    .feedback-form__title{
+        width: 287px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+
+    .feedback-form__name-input,
+    .feedback-form__phone-input,
+    .feedback-form__email-input,
+    .feedback-form__comment-input{
+        width: 328px;
+    }
+    .feedback-form__name-wrapper{
+        margin-right: 0;
+    }
+    .feedback-form__submit{
+        width: 328px;
+    }
 }

@@ -58,6 +58,34 @@ ul{
     position: relative;
 }
 
+.feedback-form__btn-close{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: -30px;
+    right: 5px;
+}
+
+.feedback-form__btn-close::before,
+.feedback-form__btn-close::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color:  #FBFBFB;;
+    border: 1px solid black;
+}
+.feedback-form__btn-close::before{
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.feedback-form__btn-close:after{
+    transform: rotate(-45deg);
+    position: absolute;
+}
 .feedback-form__title {
     width: 438px;
     font-family: "Montserrat", sans-serif;

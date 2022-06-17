@@ -18,61 +18,27 @@
     </ul>
     <ul class="cart">
         <li class="cart__item">
-            <div class="cart-img__wrapper">
-                <img class="cart__img" src="" alt="product img">
+            <div class="cart-product__wrapper">
+                <picture>
+                    <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
+                    <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
+                </picture>
             </div>
             <div class="cart-text">
-                <h4 class="cart-text__title"></h4>
-                <p class="cart-text__paragraph"></p>
+                <h4 class="cart-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
+                <p class="cart-text__paragraph--visual-hidden cart__product--available-order">Доступен под заказ</p>
             </div>
-            <div class="cart-paginator">
-                <button class="cart-paginator__btn-add"></button>
-                <p class="cart"></p>
-                <button class="cart-paginator__btn-del"></button>
+            <div class="cart__control-wrapper">
+                <button class="cart__control-btn cart__control-btn--plus"></button>
+                <p class="cart__quantity-product">1</p>
+                <button class="cart__control-btn cart__control-btn--minus"></button>
             </div>
-            <div class="cart-price__wrapper">
-                <p class="cart-price"></p>
+            <div class="cart__price-wrapper">
+                <p class="cart__price-paragraph">13560</p>
+                <p class="cart-text__paragraph--visual-hidden cart__product--sale">Доступен под заказ</p>
             </div>
-            <button class="cart__btn-del"></button>
-            <p class="visual-hidden">удалить товар из корзины</p>
-        </li>
-        <li class="cart__item">
-            <div class="cart-img__wrapper">
-                <img class="cart__img" src="" alt="product img">
-            </div>
-            <div class="cart-text">
-                <h4 class="cart-text__title"></h4>
-                <p class="cart-text__paragraph"></p>
-            </div>
-            <div class="cart-paginator">
-                <button class="cart-paginator__btn-add"></button>
-                <p class="cart"></p>
-                <button class="cart-paginator__btn-del"></button>
-            </div>
-            <div class="cart-price__wrapper">
-                <p class="cart-price"></p>
-            </div>
-            <button class="cart__btn-del"></button>
-            <p class="visual-hidden">удалить товар из корзины</p>
-        </li>
-        <li class="cart__item">
-            <div class="cart-img__wrapper">
-                <img class="cart__img" src="" alt="product img">
-            </div>
-            <div class="cart-text">
-                <h4 class="cart-text__title"></h4>
-                <p class="cart-text__paragraph"></p>
-            </div>
-            <div class="cart-paginator">
-                <button class="cart-paginator__btn-add"></button>
-                <p class="cart"></p>
-                <button class="cart-paginator__btn-del"></button>
-            </div>
-            <div class="cart-price__wrapper">
-                <p class="cart-price"></p>
-            </div>
-            <button class="cart__btn-del"></button>
-            <p class="visual-hidden">удалить товар из корзины</p>
+            <button class="cart__btn-del-product"></button>
+            <p class="cart__paragraph--visual-hidden cart__product--remove-cart">удалить товар из корзины</p>
         </li>
     </ul>
     <section class="finish-price">
@@ -91,11 +57,13 @@
             </div>
             <div class="feedback-form__phone-wrapper">
                 <label for="phone" class="feedback-form__phone-label">Телефон</label>
-                <input id="phone" class="feedback-form__phone-input" name="tel" type="tel" placeholder="+7 (999) 999-99-99">
+                <input id="phone" class="feedback-form__phone-input" name="tel" type="tel"
+                       placeholder="+7 (999) 999-99-99">
             </div>
             <div class="feedback-form__email-wrapper">
                 <label for="email" class="feedback-form__email-label">Почта</label>
-                <input id="email" class="feedback-form__email-input" name="email" type="email" placeholder="email@mail.ru">
+                <input id="email" class="feedback-form__email-input" name="email" type="email"
+                       placeholder="email@mail.ru">
             </div>
             <div class="feedback-form__comment-wrapper">
                 <label for="comment" class="feedback-form__comment-label">Комментарий</label>

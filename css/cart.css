@@ -15,7 +15,7 @@ ul {
     margin: 0 auto;
 }
 
-/*-----------------------------------------------------------------*/
+/*------------------------------cart-----------------------------------*/
 
 .cart-title {
     font-family: "Montserrat", sans-serif;
@@ -42,6 +42,47 @@ ul {
     color: #8F8B8A;
 }
 
+.product__available-order{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8F8B8A;
+    position: relative;
+}
+.product__available-order::after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 115px;
+    background-image: url("../img/icons__available-order--question.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cart__control-btn{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+}
+
+.cart__control-btn--plus{
+    background-image: url("../img/icons__cart-product--plus.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cart__control-btn--minus{
+    background-image: url("../img/icons__cart-product--minus.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /*-----------------------form feedback---------------------------*/
 
@@ -259,17 +300,21 @@ ul {
     opacity: 0.5;
 }
 
-/*-----------------------form feedback max width 680px---------------------------*/
+/*-----------------------media---------------------------*/
+
+
 
 @media (max-width: 680px) {
 
 
+
+/*---------------------form feedback----------------------------*/
     .feedback-form {
         width: 360px;
         height: 730px;
     }
 
-    .feedback-form__title{
+    .feedback-form__title {
         width: 287px;
         font-size: 14px;
         line-height: 17px;
@@ -280,13 +325,15 @@ ul {
     .feedback-form__name-input,
     .feedback-form__phone-input,
     .feedback-form__email-input,
-    .feedback-form__comment-input{
+    .feedback-form__comment-input {
         width: 328px;
     }
-    .feedback-form__name-wrapper{
+
+    .feedback-form__name-wrapper {
         margin-right: 0;
     }
-    .feedback-form__submit{
+
+    .feedback-form__submit {
         width: 328px;
     }
 }

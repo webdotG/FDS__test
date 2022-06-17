@@ -39,7 +39,6 @@ li {
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     background: #FBFBFB;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -49,11 +48,36 @@ li {
     color: #8F8B8A;
 }
 
+.sorting-bloc__items:first-child {
+    width: 72px;
+    padding-left: 201px;
+}
+
+.sorting-bloc__items:nth-child(2) {
+    width: 50px;
+    padding-left: 328px;
+}
+
+.sorting-bloc__items:last-child {
+    width: 38px;
+    padding-left: 138px;
+}
+
 .cart__item {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
+.cart__item::after {
+    content: "";
+    display: block;
+    width: 980px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    background: #EFEFEF;
+}
 
 .cart-product__wrapper {
     padding-right: 48px;
@@ -181,7 +205,7 @@ li {
     display: block;
     width: 20px;
     height: 20px;
-    margin-left: 70px;
+    margin-left: 60px;
     border: none;
     background-color: transparent;
 }
@@ -224,8 +248,25 @@ li {
     bottom: -40px;
     left: -98px;
 }
+.cart-all-in-all{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.cart-all-in-all__total,
+.cart-all-in-all__total-price{
+    margin: 0;
+}
 
-.cart__total {
+.cart-all-in-all__total{
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+.cart-all-in-all__total-price{
+    padding-bottom: 20px;
+}
+
+.cart-all-in-all__total {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -234,7 +275,8 @@ li {
     color: #181717;
 }
 
-.cart__total-price {
+
+.cart-all-in-all__total-price {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -243,7 +285,7 @@ li {
     color: #181717;
 }
 
-.cart__order-btn {
+.cart-all-in-all__order-btn {
     display: block;
     width: 280px;
     height: 50px;
@@ -256,6 +298,13 @@ li {
     line-height: 50px;
     text-align: center;
     color: #FFFFFF;
+    border: none;
+}
+
+.cart-all-in-all{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 
@@ -475,9 +524,12 @@ li {
     opacity: 0.5;
 }
 
-.cart__paragraph--visual-hidden{
+.visual-hidden {
     display: none;
 }
+
+
+
 /*-----------------------media---------------------------*/
 
 

@@ -310,6 +310,11 @@ li {
 
 /*-------------------------------form feedback-------------------------------------*/
 
+.feedback-form__wrapper{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
 .feedback-form {
     width: 500px;
     height: 563px;
@@ -524,7 +529,7 @@ li {
     opacity: 0.5;
 }
 
-.visual-hidden {
+.display-none {
     display: none;
 }
 

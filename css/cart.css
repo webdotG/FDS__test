@@ -700,6 +700,7 @@ li {
     .feedback-form {
         width: 360px;
         height: 730px;
+        left: 18%;
     }
 
     .feedback-form__title {

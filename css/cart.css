@@ -1,4 +1,8 @@
 /* --------------------Глобально скидываю стили------------------------------------------ */
+body {
+    position: relative;
+    margin: 0;
+}
 
 a {
     text-decoration: none;
@@ -32,6 +36,23 @@ li {
     line-height: 49px;
     text-transform: uppercase;
     color: #181717;
+}
+
+.cart__item {
+    position: relative;
+}
+
+.cart__item::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon__compare.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .sorting-bloc {
@@ -77,6 +98,10 @@ li {
     position: absolute;
     bottom: 0;
     background: #EFEFEF;
+}
+
+.cart-product__mobile-wrapper {
+    display: flex;
 }
 
 .cart-product__wrapper {
@@ -248,21 +273,28 @@ li {
     bottom: -40px;
     left: -98px;
 }
-.cart-all-in-all{
+
+.product-remove__btn:hover + .product-remove__hint {
+    display: block;
+}
+
+.cart-all-in-all {
     display: flex;
     flex-direction: column;
     align-items: end;
 }
+
 .cart-all-in-all__total,
-.cart-all-in-all__total-price{
+.cart-all-in-all__total-price {
     margin: 0;
 }
 
-.cart-all-in-all__total{
+.cart-all-in-all__total {
     padding-top: 10px;
     padding-bottom: 6px;
 }
-.cart-all-in-all__total-price{
+
+.cart-all-in-all__total-price {
     padding-bottom: 20px;
 }
 
@@ -301,7 +333,7 @@ li {
     border: none;
 }
 
-.cart-all-in-all{
+.cart-all-in-all {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -310,11 +342,13 @@ li {
 
 /*-------------------------------form feedback-------------------------------------*/
 
-.feedback-form__wrapper{
+.feedback-form__wrapper {
     position: absolute;
     top: 30%;
     left: 30%;
+    z-index: 1000;
 }
+
 .feedback-form {
     width: 500px;
     height: 563px;
@@ -534,14 +568,117 @@ li {
 }
 
 
+.feedback-form__wrapper-background--black-opacity {
+    width: 1438px;
+    height: 1024px;
+    left: 0px;
+    top: 0;
+    background: #4D4B4A;
+    opacity: 0.6;
+    position: absolute;
+}
 
 /*-----------------------media---------------------------*/
 
 
 @media (max-width: 680px) {
 
+    .sorting-bloc {
+        display: none;
+    }
+    .cart-title{
+        margin-left: 16px;
+    }
 
-    /*---------------------form feedback----------------------------*/
+
+    .cart {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart__item {
+        width: 324px;
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: flex-start;
+    }
+    .cart__item::before{
+        left: 300px;
+        top: 10px;
+    }
+
+    .cart-product__mobile-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cart-product__wrapper {
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .cart-text {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 34px;
+        padding-right: 0;
+    }
+
+    .cart-text__title {
+        width: 205px;
+        padding-bottom: 10px;
+    }
+
+    .cart__product--available-order {
+        margin: 0;
+    }
+
+    .cart-control-wrapper {
+        padding-bottom: 20px;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: -22px;
+    }
+
+    .cart-price {
+        margin: 0;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    .cart-price__paragraph {
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #181717;
+    }
+
+    .product-remove {
+        margin: 0;
+        position: absolute;
+        top: 14px;
+        right: 20px;
+    }
+
+    .product-remove__btn {
+        margin: 0;
+        margin-right: -10px;
+    }
+
+    .product-remove__btn::before,
+    .product-remove__btn::after {
+        background: #FF0100;
+    }
+
+    .product-remove__btn:hover+.product-remove__hint{
+        left: -155px;
+    }
+    /*-------------------------------form feedback----------------------------*/
     .feedback-form {
         width: 360px;
         height: 730px;
@@ -569,4 +706,10 @@ li {
     .feedback-form__submit {
         width: 328px;
     }
+
+
+}
+
+.display-none {
+    display: none;
 }

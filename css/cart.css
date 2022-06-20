@@ -343,10 +343,12 @@ li {
 /*-------------------------------form feedback-------------------------------------*/
 
 .feedback-form__wrapper {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 30%;
-    left: 30%;
-    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(77, 75, 74, 0.6);
 }
 
 .feedback-form {
@@ -358,6 +360,8 @@ li {
     align-items: end;
     background-color: #FBFBFB;
     position: relative;
+    left: 30%;
+    top: 15%;
 }
 
 .feedback-form__btn-close {
@@ -377,7 +381,6 @@ li {
     width: 20px;
     height: 2px;
     background-color: #FBFBFB;;
-    border: 1px solid black;
 }
 
 .feedback-form__btn-close::before {
@@ -537,6 +540,7 @@ li {
 }
 
 .feedback-form__agreement {
+    margin-bottom: 30px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;

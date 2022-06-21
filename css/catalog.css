@@ -135,6 +135,55 @@ li {
     display: flex;
 }
 
+.sorting-main__button {
+    display: block;
+    height: 35px;
+    margin-bottom: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #181717;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    position: relative;
+}
+.sorting-main__button::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+    background-image: url("../img/icon__catalog-down-menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 7px;
+    top: 15px;
+}
+
+.sorting-main__button--price {
+    width: 84px;
+    margin-right: 10px;
+}
+
+.sorting-main__button--brand {
+    width: 93px;
+    margin-right: 10px;
+}
+
+.sorting-main__button--steel {
+    width: 139px;
+}
+
+.sorting-main__button--expensive {
+    width: 173px;
+    margin-left: auto;
+}
+.sorting-main__item:last-child{
+    margin-left: auto;
+}
 /*---------------------------catalog-gallery----------------------------------*/
 
 .catalog-gallery__list {

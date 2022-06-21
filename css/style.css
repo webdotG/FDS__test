@@ -1,5 +1,5 @@
 /* --------------------Глобально скидываю стили------------------------------------------ */
-main{
+main {
     position: relative;
 }
 
@@ -209,6 +209,14 @@ a {
     border: 1px solid #E3E3E3;
 }
 
+.feedback-form input:focus,
+.feedback-form input:hover,
+.feedback-form textarea:focus,
+.feedback-form textarea:hover {
+    border: 1px solid #BB9930;
+    border-radius: 2px;
+}
+
 .feedback-form__submit {
     display: block;
     width: 680px;
@@ -227,7 +235,7 @@ a {
 }
 
 .feedback-form__submit:hover,
-.feedback-form__submit:focus{
+.feedback-form__submit:focus {
     background: #BB9930;
 }
 

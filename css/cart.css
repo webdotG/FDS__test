@@ -505,6 +505,15 @@ li {
     border: 1px solid #E3E3E3;
 }
 
+
+.feedback-form input:focus,
+.feedback-form input:hover,
+.feedback-form textarea:focus,
+.feedback-form textarea:hover {
+    border: 1px solid #BB9930;
+    border-radius: 2px;
+}
+
 .feedback-form__submit-wrapper {
     display: flex;
     flex-direction: column;
@@ -726,6 +735,18 @@ li {
         width: 328px;
     }
 
+}
+
+.cart-all-in-all__order-btn:focus,
+.cart-all-in-all__order-btn:hover {
+    background: #BB9930;
+    border: 1px solid #BB9930;
+}
+
+.cart-all-in-all__order-btn:active {
+    color: #BB9930;
+    border: 1px solid #BB9930;
+    background-color: transparent;
 }
 
 .display-none {

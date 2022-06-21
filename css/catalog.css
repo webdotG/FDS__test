@@ -137,7 +137,7 @@ li {
 
 /*---------------------------catalog-gallery----------------------------------*/
 
-.catalog-gallery__list{
+.catalog-gallery__list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -155,7 +155,8 @@ li {
     height: 475px;
     position: relative;
 }
-.catalog__special-offer{
+
+.catalog__special-offer {
     display: block;
     width: 60px;
     height: 28px;
@@ -163,7 +164,8 @@ li {
     left: 0;
     top: 0;
 }
-.catalog-gallery__item::before{
+
+.catalog-gallery__item::before {
     content: "";
     display: block;
     width: 24px;
@@ -176,7 +178,7 @@ li {
     top: 5px;
 }
 
-.catalog-gallery__title{
+.catalog-gallery__title {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -187,7 +189,8 @@ li {
     line-height: 20px;
     color: #181717;
 }
-.catalog-gallery__description{
+
+.catalog-gallery__description {
     width: 265px;
     height: 71px;
     padding-bottom: 20px;
@@ -198,17 +201,19 @@ li {
     line-height: 17px;
     color: #181717;
 }
-.catalog-gallery__price{
+
+.catalog-gallery__price {
     margin: 0;
     padding-bottom: 16px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #181717;
 }
-.catalog-gallery__btn{
+
+.catalog-gallery__btn {
     margin-left: -8px;
     display: block;
     width: 268px;
@@ -225,19 +230,23 @@ li {
 }
 
 .catalog-gallery__btn:focus,
-.catalog-gallery__btn:hover{
+.catalog-gallery__btn:hover {
     background: #BB9930;
 }
-.catalog-gallery__btn:active{
+
+.catalog-gallery__btn:active {
     border: 1px solid #BB9930;
     color: #BB9930;
     background-color: transparent;
 }
+.catalog-gallery__paginator{
+    display: flex;
+}
 .catalog-gallery__paginator-list{
     display: flex;
 }
-.catalog-gallery__paginator-link{
-    display:block;
+.catalog-gallery__paginator-link {
+    display: block;
     width: 32px;
     height: 32px;
     margin-right: 10px;
@@ -249,24 +258,42 @@ li {
     text-align: center;
     color: #181717;
 }
-.catalog-gallery__paginator-link--active{
+
+.catalog-gallery__paginator-link--active {
     color: #FFFFFF;
     background: #BB9930;
     border-radius: 2px;
 }
 
-.catalog-gallery__paginator-list{
-    width: 46px;
+
+.catalog-gallery__next-page-btn {
+    display: block;
+    align-self: center;
+    width: 50px;
     height: 17px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #181717;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+.catalog-gallery__next-page-btn::after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon__catalog-gallery--next-page.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -20px;
+    top: -2px;
 }
 
-
-.display-none{
+.display-none {
     display: none;
 }

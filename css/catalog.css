@@ -150,7 +150,8 @@ li {
     border-radius: 4px;
     position: relative;
 }
-.sorting-main__button::after{
+
+.sorting-main__button::after {
     content: "";
     display: block;
     width: 10px;
@@ -181,9 +182,11 @@ li {
     width: 173px;
     margin-left: auto;
 }
-.sorting-main__item:last-child{
+
+.sorting-main__item:last-child {
     margin-left: auto;
 }
+
 /*---------------------------catalog-gallery----------------------------------*/
 
 .catalog-gallery__list {
@@ -310,7 +313,10 @@ li {
     text-align: center;
     color: #181717;
 }
-
+.catalog-gallery__paginator-link:hover{
+    background: #E3E3E3;
+    border-radius: 2px
+}
 .catalog-gallery__paginator-link--active {
     color: #FFFFFF;
     background: #BB9930;

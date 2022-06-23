@@ -1,39 +1,46 @@
 /*------------------------------------скидываю стили глобально--------------------*/
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-li{
+
+li {
     padding: 0;
     margin: 0;
 }
 
 /*------------------------------------хедер навигация--------------------*/
-header{
+header {
     display: flex;
     position: relative;
     padding-left: 131px;
+    align-items: center;
 }
-.header-navigation{
+
+.header-navigation {
     margin-left: 40px;
     display: flex;
     flex-direction: column;
 }
-.social-nav{
+
+.social-nav {
     height: 66px;
     align-items: center;
     display: flex;
     position: relative;
 }
-.social-nav::after{
+
+.social-nav::after {
     content: "";
     display: block;
     height: 1px;
@@ -42,10 +49,12 @@ header{
     position: absolute;
     bottom: -1px;
 }
-.social-nav__item:first-child{
+
+.social-nav__item:first-child {
     position: relative;
 }
-.social-nav__item:first-child::after{
+
+.social-nav__item:first-child::after {
     content: "";
     width: 1px;
     height: 40px;
@@ -54,12 +63,13 @@ header{
     right: 5px;
     top: 0;
 }
-.social-nav__link-address{
+
+.social-nav__link-address {
     display: block;
     width: 207px;
     height: 34px;
     margin-left: 30px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -68,7 +78,8 @@ header{
     color: #181717;
     position: relative;
 }
-.social-nav__link-address::after{
+
+.social-nav__link-address::after {
     content: "";
     display: block;
     width: 24px;
@@ -80,18 +91,20 @@ header{
     top: 5px;
     position: absolute;
 }
-.social-nav__link-phone{
+
+.social-nav__link-phone {
     width: 157px;
     margin-right: 20px;
     margin-left: 20px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
     color: #181717;
 }
-.social-nav__link-vk{
+
+.social-nav__link-vk {
     display: block;
     width: 32px;
     height: 32px;
@@ -100,13 +113,14 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .social-nav__link-vk:focus,
 .social-nav__link-vk:hover,
-.social-nav__link-vk:active{
+.social-nav__link-vk:active {
     background-image: url("../img/icon__social-vk--hover.png");
 }
 
-.social-nav__link-youtube{
+.social-nav__link-youtube {
     display: block;
     width: 32px;
     height: 32px;
@@ -114,38 +128,49 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .social-nav__link-youtube:focus,
 .social-nav__link-youtube:hover,
-.social-nav__link-youtube:active{
+.social-nav__link-youtube:active {
     background-image: url("../img/icon__social-youtube--hover.png");
 }
 
 
-
-
-
-
-.website-nav{
+.website-nav {
+    height: 89px;
+    align-items: center;
     display: flex;
+}
+.website-nav__link-catalog{
+    display: block;
+    width: 130px;
+    height: 50px;
+    padding-right: 30px;
+    text-align: right;
+    background: #4D4B4A;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 50px;
+    position: relative;
+}
+.website-nav__link-catalog::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon__nav-btn-catalog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 29px;
+    top: 13px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.display-none{
+.display-none {
     display: none;
 }

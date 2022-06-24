@@ -311,18 +311,34 @@ border: 1px solid #BB9930;
     width: 93px;
     margin-right: 10px;
 }
+.sorting-main__button--brand:focus,
+.sorting-main__button--brand:hover{
+    border: 1px solid #BB9930;
+    border-radius: 4px;
+}
 .sorting-main__brand{
     width: 230px;
     height: 343px;
+    padding-top: 16px;
     padding-right: 16px;
     padding-left: 16px;
-    display: flex;
-    flex-direction: column;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    position: absolute;
+    top: 70px;
+    left:  0 ;
+    z-index: 1;
+}
+.check__wrapper{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
 }
 .sorting-main__brand label{
+    margin-bottom: 17px;
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -334,19 +350,46 @@ border: 1px solid #BB9930;
 .check__input{
     -webkit-appearance: none;
     appearance: none;
+    margin-left: 10px;
 }
 .check{
-    padding-right: 25px;
+    padding-left: 20px;
 }
 .checkbox-custom{
     position: absolute;
     width: 16px;
     height: 16px;
-    margin-left: -20px;
+    margin-left: -30px;
     background-image: url("../img/icon__checkbox--off.png");
 }
 .check__input:checked + .checkbox-custom{
     background-image: url("../img/icon__checkbox.png");
+}
+.sorting-main__brand--submit{
+    width: 250px;
+    height: 36px;
+    margin-left: -10px;
+    background: #4D4B4A;
+    border-radius: 5px;
+    border: none;
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.sorting-main__brand--submit:focus,
+.sorting-main__brand--submit:hover{
+    background: #BB9930;
+    border: 1px solid #BB9930;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.sorting-main__brand--submit:active{
+    border: 1px solid #BB9930;
+    color: #BB9930;
+    background: #FFFFFF;
 }
 .sorting-main__button--steel {
     width: 139px;

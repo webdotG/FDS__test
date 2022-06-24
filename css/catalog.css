@@ -178,8 +178,10 @@ li {
     border: 1px solid #EFEFEF;
     border-radius: 4px;
 }
-
-
+.sorting-main__button--price:focus,
+.sorting-main__button--price:hover{
+    border: 1px solid #BB9930;
+}
 .sorting-main__price {
     width: 230px;
     height: 162px;
@@ -227,6 +229,12 @@ li {
     line-height: 17px;
     color: #8F8B8A;
 }
+
+.price-to__wrapper input:hover,
+.price-for__wrapper input:hover{
+border: 1px solid #BB9930;
+}
+
 
 .price-for__wrapper,
 .price-to__wrapper {
@@ -303,7 +311,43 @@ li {
     width: 93px;
     margin-right: 10px;
 }
+.sorting-main__brand{
+    width: 230px;
+    height: 343px;
+    padding-right: 16px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.sorting-main__brand label{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #181717;
+}
 
+.check__input{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.check{
+    padding-right: 25px;
+}
+.checkbox-custom{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: -20px;
+    background-image: url("../img/icon__checkbox--off.png");
+}
+.check__input:checked + .checkbox-custom{
+    background-image: url("../img/icon__checkbox.png");
+}
 .sorting-main__button--steel {
     width: 139px;
 }

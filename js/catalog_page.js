@@ -8,10 +8,9 @@ sortingPriceBtn.addEventListener('click', function (evt) {
 })
 //------------------------------------прерываю событие ------------------------------------------
 //------------------------------------работает но в данном случае отоброжается ек так как нам надо-----------------------
-
-sortingPriceBtn.addEventListener(`click`, (e) => {
-    event.stopPropagation()
-})
-document.addEventListener(`click`, (e) => {
-    sortingPriceForm.classList.add("display-none");
-})
+//sortingPriceBtn.addEventListener(`click`, (e) => {
+//    event.stopPropagation()
+//})
+//document.addEventListener(`click`, (e) => {
+//   sortingPriceForm.classList.add("display-none");
+//})

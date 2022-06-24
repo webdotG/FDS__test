@@ -89,18 +89,21 @@
                     <ul class="sorting-main__list">
                         <li class="sorting-main__item">
                             <button class="sorting-main__button sorting-main__button--price">Цена</button>
-                            <form class="sorting-main__price">
+                            <form class="sorting-main__price display-none">
                                 <div class="price-for__wrapper">
                                     <label for="price-for">от</label>
-                                    <input id="price-for" type="number">
+                                    <input id="price-for" type="number" value="0" min="0" max="50000" pattern="[0-9]*">
                                 </div>
                                 <div class="price-to__wrapper">
                                     <label for="price-to">до</label>
-                                    <input id="price-to" type="number">
+                                    <input  id="price-to" type="number" value="50000" min="0" max="50000" pattern="[0-9]*">
                                 </div>
-                                <div class="price-slider">
+                                <div class="price-range">
+                                    <span class="price-slider__range-control--of"></span>
+                                    <span class="price-slider__range-scale"></span>
+                                    <span class="price-slider__range-control--to"></span>
                                 </div>
-                                <button type="submit">применить</button>
+                                <button class="sorting-main__price-submit" type="submit">применить</button>
                             </form>
                         </li>
                         <li class="sorting-main__item">
@@ -341,5 +344,6 @@
         </div>
     </div>
 </section>
+<script src="js/catalog_page.js"></script>
 </body>
 </html>

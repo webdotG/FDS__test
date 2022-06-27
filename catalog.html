@@ -2,10 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>catalog</title>
+    <title>header</title>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/catalog.css">
 </head>
+<body>
+<header>
+    <img class="logo-main" src="img/logo__kazbek.png" alt="logo" width="65px" height="106px">
+    <nav class="header-navigation">
+        <ul class="social-nav">
+            <li class="social-nav__item">
+                <a class="social-nav__link-address" href="#">Республика Дагестан,<br> г. Кизляр, ул. Дагестанская 2</a>
+            </li>
+            <li class="social-nav__item">
+                <a class="social-nav__link-phone" href="tel:88001234567">8(800)-123-45-67</a>
+            </li>
+            <li class="social-nav__item">
+                <a class="social-nav__link-vk" href="#"></a>
+            </li>
+            <li class="social-nav__item">
+                <a class="social-nav__link-youtube" href="#"></a>
+            </li>
+        </ul>
+        <ul class="website-nav">
+            <li class="website-nav__item"><a class="website-nav__link-catalog" href="#">Каталог</a></li>
+            <li class="website-nav__item"><a class="website-nav__link-knife-order" href="#">Ножи под заказ</a></li>
+            <li class="website-nav__item"><a class="website-nav__link-about" href="#">О мастерской</a></li>
+            <li class="website-nav__item"><a class="website-nav__link-pay" href="#">Оплата</a></li>
+            <li class="website-nav__item"><a class="website-nav__link-delivery" href="#">Доставка</a></li>
+            <li class="website-nav__item"><a class="website-nav__link-contacts" href="#">Контакты</a></li>
+            <li class="website-nav__item">
+                <div class="compare-cart__wrapper">
+                    <button class="website-nav__btn website-nav__compare">Сравнение<div class="count-number__compare">3</div></button>
+                    <button class="website-nav__btn website-nav__cart">Корзина<div class="count-number__cart">3</div></button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
 <body>
 <section class="catalog-wrapper">
     <div class="containers">
@@ -378,6 +413,5 @@
         </div>
     </div>
 </section>
-<script src="js/catalog_page.js"></script>
 </body>
 </html>

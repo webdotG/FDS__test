@@ -29,8 +29,7 @@ header {
 
 .header-navigation {
     margin-left: 40px;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .social-nav {
@@ -247,6 +246,7 @@ header {
 }
 .compare-cart__wrapper {
     display: flex;
+    margin-top: 80px;
 }
 
 .website-nav__btn {

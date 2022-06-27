@@ -309,20 +309,18 @@ header {
     left: 30px;
 }
 
-
-
-/*.count-number{
+.count-number__cart,
+.count-number__compare{
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: tomato;
     border-radius: 50%;
     color: white;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -22px;
+    left: 37px;
 }
 .website-nav__compare{
  position: relative;
 }
- */

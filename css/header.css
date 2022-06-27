@@ -227,11 +227,24 @@ header {
     width: 76px;
 }
 
-.website-nav__link-contacts,
-.website-nav__link-contacts {
+.website-nav__link-contacts{
     margin-right: 125px;
 }
-
+.website-nav__link-pay::after,
+.website-nav__link-knife-order::after,
+.website-nav__link-delivery::after,
+.website-nav__link-about::after,
+.website-nav__link-delivery::after,
+.website-nav__link-contacts::after{
+    display: none;
+}
+ .website-nav__item:hover .website-nav__link-contacts::after,
+ .website-nav__item:hover .website-nav__link-delivery::after,
+ .website-nav__item:hover .website-nav__link-about::after,
+ .website-nav__item:hover .website-nav__link-pay::after,
+ .website-nav__item:hover .website-nav__link-knife-order::after{
+    display: block;
+}
 .compare-cart__wrapper {
     display: flex;
 }
@@ -297,6 +310,19 @@ header {
 }
 
 
-.display-none {
-    display: none;
+
+/*.count-number{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+.website-nav__compare{
+ position: relative;
+}
+ */

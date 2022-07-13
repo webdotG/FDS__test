@@ -86,9 +86,9 @@ li {
     width: 38px;
     padding-left: 138px;
 }
-
-
-
+.cart{
+    padding-left: 42px;
+}
 .cart__item {
     display: flex;
     align-items: center;

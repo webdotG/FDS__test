@@ -7,52 +7,47 @@
     <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
+<!-- ------------------------------add tablet-desktop version ---------------------------------- -->
+
+
+<!-- ------------------------------end tablet-desktop version ---------------------------------- -->
 <section>
     <div class="containers">
         <h1 class="cart-title">Корзина</h1>
-        <table class="sorting-bloc">
-            <tr>
-                <td class="sorting-bloc__items">Название</td>
-                <td class="sorting-bloc__items">Кол-во</td>
-                <td class="sorting-bloc__items">Цена</td>
-            </tr>
-        </table>
-        <table class="cart">
-            <tr class="cart__item">
-                <td class="cart-product__wrapper">
+        <ul class="sorting-bloc">
+            <li class="sorting-bloc__items">Название</li>
+            <li class="sorting-bloc__items">Кол-во</li>
+            <li class="sorting-bloc__items">Цена</li>
+        </ul>
+        <ul class="cart">
+            <li class="cart__item">
+                <div class="cart-product__wrapper">
                     <picture>
                         <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
                         <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
                     </picture>
-                </td>
-                <td class="cart-product__mobile-wrapper">
+                </div>
+                <div class="cart-product__mobile-wrapper">
                     <div class="cart-text">
                         <h4 class="cart-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
                         <p class="cart__product--available-order">Доступен под заказ</p>
                     </div>
-                </td>
-                <td>
                     <div class="cart-control-wrapper">
                         <button class="cart-control__btn cart-control__btn--plus"></button>
                         <p class="cart-control__quantity-product">1</p>
                         <button class="cart-control__btn cart-control__btn--minus"></button>
                     </div>
-                <td>
-                <td>
                     <div class="cart-price">
                         <p class="cart-price__paragraph">13 560</p>
                         <p class="display-none cart-price__sale">скидка 20%</p>
                     </div>
-                </td>
-                <td>
-                    <div class="product-remove">
-                        <button class="product-remove__btn"></button>
-                        <p class="display-none product-remove__hint">удалить товар из корзины</p>
-                    </div>
-                </td>
-            </tr>
-        </table>
-            <!--<li class="cart__item">
+                </div>
+                <div class="product-remove">
+                    <button class="product-remove__btn"></button>
+                    <p class="display-none product-remove__hint">удалить товар из корзины</p>
+                </div>
+            </li>
+            <li class="cart__item">
                 <div class="cart-product__wrapper">
                     <picture>
                         <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
@@ -106,7 +101,7 @@
                     <p class="display-none product-remove__hint">удалить товар из корзины</p>
                 </div>
             </li>
-        </table>
+        </ul>
         <section class="cart-all-in-all">
             <p class="cart-all-in-all__total">Итого:</p>
             <h4 class="cart-all-in-all__total-price">40 680 ₽</h4>

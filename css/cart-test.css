@@ -22,6 +22,14 @@
 .sorting-bloc__items5 {
     width: 2%;
 }
+.sorting-bloc {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8F8B8A;
+}
 .cart-title {
     padding-left: 42px;
     font-family: "Montserrat", sans-serif;

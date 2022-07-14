@@ -12,15 +12,13 @@
 }
 
 .compare-gallery__wrapper {
-    width: 1180px;
-    padding-right: 130px;
-    padding-left: 130px;
+    overflow: hidden;
     position: relative;
 }
 
 .compare-gallery__control-wrapper {
     position: absolute;
-    right: 127px;
+    left: 0;
     top: -60px;
 }
 
@@ -32,7 +30,7 @@
 
 
 .compare-gallery__list {
-    margin: 0 auto;
+    display: flex;
 }
 
 .compare-gallery__item {
@@ -150,3 +148,13 @@
 .table--background {
     background-color: #FBFBFB;;
 }
+/*---------------------------------------------------MEDIA---------------------------------------------*/
+
+@media (max-width: 1024px) {
+
+    .compare-gallery__wrapper{
+        width: 1024px;
+    }
+
+}
+

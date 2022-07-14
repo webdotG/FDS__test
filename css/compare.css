@@ -1,5 +1,6 @@
 .compare-title {
-    padding-bottom: 7px;
+    padding-bottom: 75px;
+    margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -8,26 +9,30 @@
     text-transform: uppercase;
     color: #181717;
 }
-.compare-gallery__control-wrapper{
-    padding-left: 130px;
-    padding-right: 130px;
+
+.compare-gallery__wrapper {
     position: relative;
 }
-.compare-gallery__control-wrapper{
 
+.compare-gallery__control-wrapper {
+    margin-right: 25px;
     position: absolute;
     right: 0;
+    top: -60px;
 }
 
 .compare-gallery__control-btn--prev,
-.compare-gallery__control-btn--next{
+.compare-gallery__control-btn--next {
     border: none;
     background-color: transparent;
 }
 
 
 .compare-gallery__list {
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 

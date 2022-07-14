@@ -31,8 +31,35 @@
 .compare-gallery__list {
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+}
 
+/*----------------------------------------------TABLE---------------------------------------------*/
+.compare-table {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #181717;
+}
+
+.compare-table td{
+    width: 248px;
+    padding-right: 52px;
+}
+
+.compare-table__title-min {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #181717;
+}
+
+.table--background {
+    background-color: #FBFBFB;;
 }
 
 

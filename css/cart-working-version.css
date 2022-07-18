@@ -30,6 +30,16 @@ li {
     padding-right: 30px;
 }
 
+.cart-page__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #181717;
+}
+
 .cart-page-sorting-bloc__items1 {
     width: 10%;
 }
@@ -320,17 +330,6 @@ li {
         align-items: center;
     }
 
-
-    .cart-page__title {
-        padding-left: 42px;
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 49px;
-        text-transform: uppercase;
-        color: #181717;
-    }
 
     .cart-page__item {
         display: flex;

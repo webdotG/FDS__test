@@ -11,16 +11,21 @@
     color: #181717;
 }
 
-.compare-gallery__wrapper {
-    overflow: hidden;
+.comapre-page__wrapper {
     position: relative;
 }
 
 .compare-gallery__control-wrapper {
     position: absolute;
-    left: 0;
-    top: 75px;
+    right: 0;
+    top: -50px;
 }
+
+.compare-gallery__wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
 
 .compare-gallery__control-btn--prev,
 .compare-gallery__control-btn--next {
@@ -148,11 +153,12 @@
 .table--background {
     background-color: #FBFBFB;;
 }
+
 /*---------------------------------------------------MEDIA---------------------------------------------*/
 
 @media (max-width: 1024px) {
 
-    .compare-gallery__wrapper{
+    .compare-gallery__wrapper {
     }
 
 }

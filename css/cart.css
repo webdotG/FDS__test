@@ -247,7 +247,7 @@ li {
 /*---------------------------------------------------------------------конец планшетной версии----------------------------------------------------------------*/
 
 
-/* --------------------------------------------------------------------------------MAX-WIDTH 600 PX------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------MAX-WIDTH 680 PX------------------------------------------------------------------- */
 
 @media (max-width: 680px) {
 
@@ -259,13 +259,13 @@ li {
         display: block;
     }
 
-    /* ----------------------------------Центровщик---------------------------- */
+    /* ----------------------------------------------------------------------Центровщик---------------------------- */
     .containers {
         width: 960px;
         margin: 0 auto;
     }
 
-    /*----------------------------------------cart-----------------------------------*/
+    /*--------------------------------------------------------------------------------cart-----------------------------------*/
     .cart-title {
         padding-left: 42px;
         font-family: "Montserrat", sans-serif;
@@ -586,169 +586,126 @@ li {
     }
 
 
-
-    /*-----------------------media---------------------------*/
-    @media (max-width: 680px) {
-
-
-        /*-----------------------containers mobile version---------------------------*/
-        .containers {
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+/*---------------------------------------------------------------------OLD VERSION NEED FIX-------------------------------------*/
+/*-----------------------media---------------------------*/
+@media (max-width: 680px) {
 
 
-        /*-----------------------cart---------------------------*/
-        .sorting-bloc {
-            display: none;
-        }
+    /*---------------------------------------------------------------------containers mobile version---------------------------*/
 
-        .cart-title {
-            margin-left: 16px;
-        }
-
-
-        .cart {
-            width: 360px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .cart__item {
-            width: 324px;
-            padding-left: 16px;
-            padding-right: 16px;
-            align-items: flex-start;
-        }
-
-        .cart__item::before {
-            left: 300px;
-            top: 10px;
-        }
-
-        .cart-product__mobile-wrapper {
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .cart-product__wrapper {
-            padding: 0;
-            padding-top: 25px;
-        }
-
-        .cart-text {
-            padding-top: 15px;
-            padding-left: 15px;
-            padding-bottom: 34px;
-            padding-right: 0;
-        }
-
-        .cart-text__title {
-            width: 205px;
-            padding-bottom: 10px;
-        }
-
-        .cart__product--available-order {
-            margin: 0;
-        }
-
-        .cart-control-wrapper {
-            padding-bottom: 20px;
-            margin: 0;
-            margin-left: 15px;
-            margin-top: -22px;
-        }
-
-        .cart-price {
-            margin: 0;
-            padding: 0;
-            margin-left: 15px;
-        }
-
-        .cart-price__paragraph {
-            margin: 0;
-            margin-bottom: 20px;
-            font-family: "Montserrat", sans-serif;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-            color: #181717;
-        }
-
-        .product-remove {
-            margin: 0;
-            position: absolute;
-            top: 14px;
-            right: 20px;
-        }
-
-        .product-remove__btn {
-            margin: 0;
-            margin-right: -10px;
-        }
-
-        .product-remove__btn::before,
-        .product-remove__btn::after {
-            background: #FF0100;
-        }
-
-        .product-remove__btn:hover + .product-remove__hint {
-            left: -155px;
-        }
-
-
-
-    }
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-    .cart-all-in-all__order-btn:focus,
-    .cart-all-in-all__order-btn:hover {
-        background: #BB9930;
-        border: 1px solid #BB9930;
-    }
-
-    .cart-all-in-all__order-btn:active {
-        color: #BB9930;
-        border: 1px solid #BB9930;
-        background-color: transparent;
+    .containers {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
-/*-------------------------------form feedback----------------------------*/
-.feedback-form {
-    width: 360px;
-    height: 730px;
-    left: 18%;
+    /*-----------------------cart---------------------------*/
+    .sorting-bloc {
+        display: none;
+    }
+
+    .cart-title {
+        margin-left: 16px;
+    }
+
+
+    .cart {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart__item {
+        width: 324px;
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: flex-start;
+    }
+
+    .cart__item::before {
+        left: 300px;
+        top: 10px;
+    }
+
+    .cart-product__mobile-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cart-product__wrapper {
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .cart-text {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 34px;
+        padding-right: 0;
+    }
+
+    .cart-text__title {
+        width: 205px;
+        padding-bottom: 10px;
+    }
+
+    .cart__product--available-order {
+        margin: 0;
+    }
+
+    .cart-control-wrapper {
+        padding-bottom: 20px;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: -22px;
+    }
+
+    .cart-price {
+        margin: 0;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    .cart-price__paragraph {
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #181717;
+    }
+
+    .product-remove {
+        margin: 0;
+        position: absolute;
+        top: 14px;
+        right: 0;
+    }
+
+    .product-remove__btn {
+        margin: 0;
+        margin-right: -10px;
+    }
+
+    .product-remove__btn::before,
+    .product-remove__btn::after {
+        background: #FF0100;
+    }
+
+    .product-remove__btn:hover + .product-remove__hint {
+        left: -155px;
+    }
+
+
+
 }
 
-.feedback-form__title {
-    width: 287px;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    letter-spacing: 0.2px;
-}
 
-.feedback-form__name-input,
-.feedback-form__phone-input,
-.feedback-form__email-input,
-.feedback-form__comment-input {
-    width: 328px;
-}
-
-.feedback-form__name-wrapper {
-    margin-right: 0;
-}
-
-.feedback-form__submit {
-    width: 328px;
-}
-
-/*-------------------------------form feedback-------------------------------------*/
+/*--------------------------------------------form feedback------------------------------------------------------*/
 .feedback-form__wrapper {
     width: 100%;
     height: 100%;
@@ -820,7 +777,6 @@ li {
     font-size: 16px;
     line-height: 20px;
     color: #181717;
-
 }
 
 .feedback-form__name-wrapper,
@@ -847,7 +803,6 @@ li {
 .feedback-form__comment-wrapper {
     margin-bottom: -75px;
 }
-
 
 .feedback-form__name-label,
 .feedback-form__phone-label,
@@ -998,3 +953,17 @@ li {
     position: absolute;
 }
 
+/*---------------------------------------------------------------СART ALL in ALL HOVER----------------------------------------------------------------------------------*/
+
+
+.cart-all-in-all__order-btn:focus,
+.cart-all-in-all__order-btn:hover {
+    background: #BB9930;
+    border: 1px solid #BB9930;
+}
+
+.cart-all-in-all__order-btn:active {
+    color: #BB9930;
+    border: 1px solid #BB9930;
+    background-color: transparent;
+}

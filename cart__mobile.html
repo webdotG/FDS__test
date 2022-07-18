@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart__mobile</title>
+    <link rel="stylesheet" href="css/cart__mobile.css">
+</head>
+<body>
+<!-- ------------------------------mobile version ---------------------------------- -->
+<section class="cart-page__mobile-version">
+    <div class="cart-page__mobile-containers">
+        <h1 class="cart-page__title">Корзина</h1>
+        <ul class="sorting-bloc">
+            <li class="sorting-bloc__items">Название</li>
+            <li class="sorting-bloc__items">Кол-во</li>
+            <li class="sorting-bloc__items">Цена</li>
+        </ul>
+        <ul class="cart-page__list">
+            <li class="cart-page__item">
+                <div class="cart-page-product__wrapper">
+                    <picture>
+                        <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
+                        <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
+                    </picture>
+                </div>
+                <div class="cart-page-product__mobile-wrapper">
+                    <div class="cart-page-text">
+                        <h4 class="cart-page-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
+                        <p class="cart-page__product--available-order">Доступен под заказ</p>
+                    </div>
+                    <div class="cart-page-control-wrapper">
+                        <button class="cart-page-control__btn cart-page-control__btn--plus"></button>
+                        <p class="cart-page-control__quantity-product">1</p>
+                        <button class="cart-page-control__btn cart-page-control__btn--minus"></button>
+                    </div>
+                    <div class="cart-page-page-price">
+                        <p class="cart-page-price__paragraph">13 560</p>
+                        <p class="cart-page-price__sale">скидка 20%</p>
+                    </div>
+                </div>
+                <div class="product-remove">
+                    <button class="product-remove__btn"></button>
+                    <p class="display-none product-remove__hint">удалить товар из корзины</p>
+                </div>
+            </li>
+        </ul>
+        <section class="cart-all-in-all">
+            <p class="cart-all-in-all__total">Итого:</p>
+            <h4 class="cart-all-in-all__total-price">40 680 ₽</h4>
+            <button class="cart-all-in-all__order-btn">Оформить заказ</button>
+        </section>
+<!-- ------------------------------------------------------------------end mobile version--------------------------------------  -->
+</body>
+</html>

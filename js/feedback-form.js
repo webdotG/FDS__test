@@ -14,8 +14,4 @@ formClose.addEventListener('click', function (evt){
     feedbackForm.classList.add('display-none');
 })
 
-//productHint.addEventListener('click',( evt) {
-  //  evt.preventDefault()
-//} )
-
 

@@ -4,63 +4,9 @@
     <meta charset="UTF-8">
     <title>Cart</title>
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/cart__desktop.css">
 </head>
 <body>
-<!-- ------------------------------add tablet-desktop version ---------------------------------- -->
-<section class="responsive-version__wrapper">
-    <div class="containers">
-        <h1 class="cart-title">Корзина</h1>
-        <table class="cart">
-            <colgroup>
-                <col class="sorting-bloc__items1">
-                <col class="sorting-bloc__items2">
-                <col class="sorting-bloc__items3">
-                <col class="sorting-bloc__items4">
-                <col class="sorting-bloc__items5">
-            </colgroup>
-            <tr>
-                <td></td>
-                <td class="sorting-bloc">Название</td>
-                <td class="sorting-bloc">Кол-во</td>
-                <td class="sorting-bloc">Цена</td>
-                <td></td>
-            </tr>
-            <tr class="cart__item">
-                <td class="a1">
-                    <picture>
-                        <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
-                        <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
-                    </picture>
-                </td>
-                <td class="a2">
-                    <div>
-                        <h4 class="cart-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
-                        <p class="cart__product--available-order">Доступен под заказ</p>
-                    </div>
-                </td>
-                <td class="a3">
-                    <div class="cart-control-wrapper">
-                        <button class="cart-control__btn cart-control__btn--plus"></button>
-                        <p class="cart-control__quantity-product">1</p>
-                        <button class="cart-control__btn cart-control__btn--minus"></button>
-                    </div>
-                </td>
-                <td class="a4">
-                    <div class="cart-price">
-                        <p class="cart-price__paragraph">13 560</p>
-                        <p class="display-none cart-price__sale">скидка 20%</p>
-                    </div>
-                </td>
-                <td class="a5">
-                    <div class="product-remove">
-                        <button class="product-remove__btn"></button>
-                        <p class="display-none product-remove__hint">удалить товар из корзины</p>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
     <section class="cart-all-in-all">
         <p class="cart-all-in-all__total">Итого:</p>
         <h4 class="cart-all-in-all__total-price">40 680 ₽</h4>
@@ -99,102 +45,6 @@
     </section>
 </section>
 <!-- ------------------------------end tablet-desktop version ---------------------------------- -->
-<section class="mobile-version">
-    <div class="containers">
-        <h1 class="cart-title">Корзина</h1>
-        <ul class="sorting-bloc">
-            <li class="sorting-bloc__items">Название</li>
-            <li class="sorting-bloc__items">Кол-во</li>
-            <li class="sorting-bloc__items">Цена</li>
-        </ul>
-        <ul class="cart">
-            <li class="cart__item">
-                <div class="cart-product__wrapper">
-                    <picture>
-                        <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
-                        <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
-                    </picture>
-                </div>
-                <div class="cart-product__mobile-wrapper">
-                    <div class="cart-text">
-                        <h4 class="cart-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
-                        <p class="cart__product--available-order">Доступен под заказ</p>
-                    </div>
-                    <div class="cart-control-wrapper">
-                        <button class="cart-control__btn cart-control__btn--plus"></button>
-                        <p class="cart-control__quantity-product">1</p>
-                        <button class="cart-control__btn cart-control__btn--minus"></button>
-                    </div>
-                    <div class="cart-price">
-                        <p class="cart-price__paragraph">13 560</p>
-                        <p class="display-none cart-price__sale">скидка 20%</p>
-                    </div>
-                </div>
-                <div class="product-remove">
-                    <button class="product-remove__btn"></button>
-                    <p class="display-none product-remove__hint">удалить товар из корзины</p>
-                </div>
-            </li>
-            <li class="cart__item">
-                <div class="cart-product__wrapper">
-                    <picture>
-                        <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
-                        <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
-                    </picture>
-                </div>
-                <div class="cart-product__mobile-wrapper">
-                    <div class="cart-text">
-                        <h4 class="cart-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
-                        <p class="display-none cart__product--available-order">Доступен под заказ</p>
-                    </div>
-                    <div class="cart-control-wrapper">
-                        <button class="cart-control__btn cart-control__btn--plus"></button>
-                        <p class="cart-control__quantity-product">1</p>
-                        <button class="cart-control__btn cart-control__btn--minus"></button>
-                    </div>
-                    <div class="cart-price">
-                        <p class="cart-price__paragraph">13 560</p>
-                        <p class="cart-price__sale">скидка 20%</p>
-                    </div>
-                </div>
-                <div class="product-remove">
-                    <button class="product-remove__btn"></button>
-                    <p class="display-none product-remove__hint">удалить товар из корзины</p>
-                </div>
-            </li>
-            <li class="cart__item">
-                <div class="cart-product__wrapper">
-                    <picture>
-                        <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
-                        <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
-                    </picture>
-                </div>
-                <div class="cart-product__mobile-wrapper">
-                    <div class="cart-text">
-                        <h4 class="cart-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
-                        <p class="display-none cart__product--available-order">Доступен под заказ</p>
-                    </div>
-                    <div class="cart-control-wrapper">
-                        <button class="cart-control__btn cart-control__btn--plus"></button>
-                        <p class="cart-control__quantity-product">1</p>
-                        <button class="cart-control__btn cart-control__btn--minus"></button>
-                    </div>
-                    <div class="cart-price">
-                        <p class="cart-price__paragraph">13 560</p>
-                        <p class="display-none cart-price__sale">скидка 20%</p>
-                    </div>
-                </div>
-                <div class="product-remove">
-                    <button class="product-remove__btn"></button>
-                    <p class="display-none product-remove__hint">удалить товар из корзины</p>
-                </div>
-            </li>
-        </ul>
-        <section class="cart-all-in-all">
-            <p class="cart-all-in-all__total">Итого:</p>
-            <h4 class="cart-all-in-all__total-price">40 680 ₽</h4>
-            <button class="cart-all-in-all__order-btn">Оформить заказ</button>
-        </section>
         <section class="feedback-form__wrapper display-none">
             <form class="feedback-form">
                 <button class="feedback-form__btn-close"></button>

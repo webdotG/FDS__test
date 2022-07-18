@@ -19,7 +19,7 @@
 .compare-gallery__control-wrapper {
     position: absolute;
     left: 0;
-    top: -60px;
+    top: 75px;
 }
 
 .compare-gallery__control-btn--prev,
@@ -153,7 +153,6 @@
 @media (max-width: 1024px) {
 
     .compare-gallery__wrapper{
-        width: 1024px;
     }
 
 }

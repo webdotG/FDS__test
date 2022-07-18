@@ -648,16 +648,36 @@ li {
         display: none;
     }
 
-    .sorting-main__list{
+    .sorting-main__list {
         width: 328px;
         padding-left: 16px;
         padding-right: 16px;
-
     }
-    .sorting-main__button{
+
+    .sorting-main__button {
         display: none;
     }
-    .sorting-main__button--mobile{
+
+    .sorting-main__button--mobile {
         display: block;
     }
+
+    .catalog-gallery__item {
+        width: 156px;
+        height: 390px;
+    }
+
+    .catalog-gallery__title {
+        padding-top: 23px;
+    }
+
+    .catalog-gallery__price {
+        padding-bottom: 10px;
+    }
+
+    .catalog-gallery__btn {
+        width: 144px;
+        height: 36px;
+    }
+
 }

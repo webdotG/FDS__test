@@ -11,10 +11,15 @@
     <div class="catalog-page__containers">
         <section class="catalog-page__breadcrumbs">
             <ul class="catalog-page__breadcrumbs-list">
-                <li class="catalog-page-breadcrumbs-list__item"><a class="catalog-page-breadcrumbs-list__link" href="#">Главная</a></li>
-                <li class="catalog-page-breadcrumbs-list__item"><a class="catalog-page-breadcrumbs-list__link" href="#">Все ножи</a></li>
-                <li class="catalog-page-breadcrumbs-list__item"><a class="catalog-page-breadcrumbs-list__link" href="#">Ножи для выживания</a></li>
-                <li class="catalog-page-breadcrumbs-list__item breadcrumbs-list__item--mobile"><a class="catalog-page-breadcrumbs-list__link breadcrumbs-list__link--mobile" href="#">Назад</a></li>
+                <li class="catalog-page-breadcrumbs-list__item"><a class="catalog-page-breadcrumbs-list__link" href="#">Главная</a>
+                </li>
+                <li class="catalog-page-breadcrumbs-list__item"><a class="catalog-page-breadcrumbs-list__link" href="#">Все
+                    ножи</a></li>
+                <li class="catalog-page-breadcrumbs-list__item"><a class="catalog-page-breadcrumbs-list__link" href="#">Ножи
+                    для выживания</a></li>
+                <li class="catalog-page-breadcrumbs-list__item breadcrumbs-list__item--mobile"><a
+                        class="catalog-page-breadcrumbs-list__link breadcrumbs-list__link--mobile" href="#">Назад</a>
+                </li>
             </ul>
         </section>
         <h1 class="catalog-page__main-title">Ножи для выживания</h1>
@@ -87,7 +92,9 @@
                 <div class="catalog__sorting-main">
                     <ul class="sorting-main__list">
                         <li class="sorting-main__item">
-                            <button class="sorting-main__button sorting-main__button--price sorting-main__button--mobile">Цена</button>
+                            <button class="sorting-main__button sorting-main__button--price sorting-main__button--mobile">
+                                Цена
+                            </button>
                             <form class="sorting-main__price display-none">
                                 <div class="price-for__wrapper">
                                     <label for="price-for">от</label>
@@ -112,7 +119,8 @@
                                 <div class="check__wrapper">
                                     <label class="check option" for="checkbox-brand1"><input class="check__input"
                                                                                              id="checkbox-brand1"
-                                                                                             type="checkbox" checked ><span
+                                                                                             type="checkbox"
+                                                                                             checked><span
                                             class="checkbox-custom"></span>бренд 1</label>
                                     <label class="check option" for="checkbox-brand2"><input class="check__input"
                                                                                              id="checkbox-brand2"
@@ -146,7 +154,8 @@
                             <button class="sorting-main__button sorting-main__button--steel">Марка стали</button>
                         </li>
                         <li class="sorting-main__item">
-                            <button class="sorting-main__button sorting-main__button--expensive  sorting-main__button--mobile">Сначала дорогие
+                            <button class="sorting-main__button sorting-main__button--expensive  sorting-main__button--mobile">
+                                Сначала дорогие
                             </button>
                         </li>
                     </ul>
@@ -154,9 +163,12 @@
                 <div class="catalog-gallery__wrapper">
                     <ul class="catalog-gallery__list">
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new"
-                                 src="img/catalog__special-offer--new.png" alt="new product"></img>
-                            <img src="img/catalog__ganzo-knife--desktop.jpg" alt="ganzo knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <!--<img class="catalog__special-offer catalog__special-offer--new"
+                                     src="img/catalog__special-offer--new.png" alt="new product"></img>-------------хочу это говно через псевдоэлементы---->
+                                <img src="img/catalog__ganzo-knife--desktop.jpg" alt="ganzo knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -176,7 +188,10 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -196,9 +211,12 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new"
-                                 src="img/catalog__special-offer--sale.png" alt="sale product"></img>
-                            <img src="img/catalog__sog-knife--desktop.jpg" alt="sog knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                             <!--   <img class="catalog__special-offer catalog__special-offer--new"
+                                     src="img/catalog__special-offer--sale.png" alt="sale product"></img>-->
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -218,9 +236,10 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new display-none" src="#"
-                                 alt="description offer"></img>
-                            <img src="img/catalog__ganzo-knife--desktop.jpg" alt="ganzo knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -240,9 +259,10 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new display-none" src="#"
-                                 alt="description offer"></img>
-                            <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -262,9 +282,10 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new display-none" src="#"
-                                 alt="description offer"></img>
-                            <img src="img/catalog__sog-knife--desktop.jpg" alt="sog knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -284,9 +305,10 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new display-none" src="#"
-                                 alt="description offer"></img>
-                            <img src="img/catalog__ganzo-knife--desktop.jpg" alt="ganzo knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -306,9 +328,10 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new display-none" src="#"
-                                 alt="description offer"></img>
-                            <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>
@@ -328,9 +351,10 @@
                             <button class="catalog-gallery__btn">В корзину</button>
                         </li>
                         <li class="catalog-gallery__item">
-                            <img class="catalog__special-offer catalog__special-offer--new display-none" src="#"
-                                 alt="description offer"></img>
-                            <img src="img/catalog__sog-knife--desktop.jpg" alt="sog knife photo">
+                            <picture>
+                                <source srcset="img/knives-mobile.jpg" media="(max-width: 680px)">
+                                <img src="img/catalog__okinel-knife--desktop.jpg" alt="okinel knife photo">
+                            </picture>
                             <h5 class="catalog-gallery__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h5>
                             <table class="catalog-gallery__description">
                                 <tr>

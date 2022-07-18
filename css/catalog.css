@@ -609,11 +609,12 @@ li {
 
     .breadcrumbs-list__item--mobile {
         padding-left: 20px;
+        padding-bottom: 30px;
         display: block;
         position: relative;
     }
 
-    .breadcrumbs-list__item--mobile::before{
+    .breadcrumbs-list__item--mobile::before {
         content: "";
         display: block;
         width: 20px;
@@ -624,8 +625,39 @@ li {
         background-image: url("../img/icon__back.png");
         background-position: center;
         background-repeat: no-repeat;
-
     }
 
+    .catalog-page__main-title {
+        width: 263px;
+        margin: 0;
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
 
+    .catalog__main-search-result {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .catalog-page__wrapper {
+        display: block;
+    }
+
+    .left-bar__list {
+        display: none;
+    }
+
+    .sorting-main__list{
+        width: 328px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+    .sorting-main__button{
+        display: none;
+    }
+    .sorting-main__button--mobile{
+        display: block;
+    }
 }

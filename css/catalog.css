@@ -1,4 +1,4 @@
-/* --------------------Глобально скидываю стили------------------------------------------ */
+/* --------------------------------------------------global styles drop------------------------------------------ */
 main {
     position: relative;
 }
@@ -18,31 +18,41 @@ li {
     margin: 0;
 }
 
-/* ----------------------Центровщик---------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 
-.containers {
+.catalog-page__containers {
     width: 1200px;
     margin: 0 auto;
 }
 
 
-/*---------------------------breadcrumbs*----------------------------------*/
-.breadcrumbs-list {
+/*------------------------------------------------------breadcrumbs------------------------------------------------*/
+
+.catalog-page-breadcrumbs-list__link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #181717;
+}
+
+.catalog-page__breadcrumbs-list {
     display: flex;
 }
 
-.breadcrumbs-list__item {
+.catalog-page-breadcrumbs-list__item {
     position: relative;
 }
 
-.breadcrumbs-list__item:first-child,
-.breadcrumbs-list__item:nth-child(2) {
+.catalog-page-breadcrumbs-list__item:first-child,
+.catalog-page-breadcrumbs-list__item:nth-child(2) {
     margin-right: 25px;
 }
 
-.breadcrumbs-list__item:first-child::after,
-.breadcrumbs-list__item:nth-child(2)::after {
+.catalog-page-breadcrumbs-list__item:first-child::after,
+.catalog-page-breadcrumbs-list__item:nth-child(2)::after {
     content: "";
     display: block;
     width: 10px;
@@ -55,15 +65,15 @@ li {
     right: -18px;
 }
 
-/*---------------------------catalog----------------------------------*/
+/*-------------------------------------------------------------catalog--------------------------------------------------*/
 
-.catalog__wrapper {
+.catalog-page__wrapper {
     display: flex;
 }
 
-/*---------------------------left-bar----------------------------------*/
+/*-------------------------------------------------------------left-bar------------------------------------------------*/
 
-.catalog-main {
+.catalog-page__main-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -122,9 +132,9 @@ li {
     color: #7A631F;
 }
 
-/*---------------------------catalog-right-block----------------------------------*/
+/*----------------------------------------------------------catalog-right-block----------------------------------*/
 
-/*---------------------------catalog-sorting-block----------------------------------*/
+/*----------------------------------------------------------catalog-sorting-block----------------------------------*/
 
 .catalog-right-block {
     width: 920px;
@@ -178,10 +188,12 @@ li {
     border: 1px solid #EFEFEF;
     border-radius: 4px;
 }
+
 .sorting-main__button--price:focus,
-.sorting-main__button--price:hover{
+.sorting-main__button--price:hover {
     border: 1px solid #BB9930;
 }
+
 .sorting-main__price {
     width: 230px;
     height: 162px;
@@ -231,8 +243,8 @@ li {
 }
 
 .price-to__wrapper input:hover,
-.price-for__wrapper input:hover{
-border: 1px solid #BB9930;
+.price-for__wrapper input:hover {
+    border: 1px solid #BB9930;
 }
 
 
@@ -311,12 +323,14 @@ border: 1px solid #BB9930;
     width: 93px;
     margin-right: 10px;
 }
+
 .sorting-main__button--brand:focus,
-.sorting-main__button--brand:hover{
+.sorting-main__button--brand:hover {
     border: 1px solid #BB9930;
     border-radius: 4px;
 }
-.sorting-main__brand{
+
+.sorting-main__brand {
     width: 230px;
     height: 343px;
     padding-top: 16px;
@@ -327,19 +341,21 @@ border: 1px solid #BB9930;
     border-radius: 4px;
     position: absolute;
     top: 70px;
-    left:  0 ;
+    left: 0;
     z-index: 1;
 }
-.check__wrapper{
+
+.check__wrapper {
     height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
 }
-.sorting-main__brand label{
+
+.sorting-main__brand label {
     margin-bottom: 17px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -347,50 +363,57 @@ border: 1px solid #BB9930;
     color: #181717;
 }
 
-.check__input{
+.check__input {
     -webkit-appearance: none;
     appearance: none;
     margin-left: 10px;
 }
-.check{
+
+.check {
     padding-left: 20px;
 }
-.checkbox-custom{
+
+.checkbox-custom {
     position: absolute;
     width: 16px;
     height: 16px;
     margin-left: -30px;
     background-image: url("../img/icon__checkbox--off.png");
 }
-.check__input:checked + .checkbox-custom{
+
+.check__input:checked + .checkbox-custom {
     background-image: url("../img/icon__checkbox.png");
 }
-.sorting-main__brand--submit{
+
+.sorting-main__brand--submit {
     width: 250px;
     height: 36px;
     margin-left: -10px;
     background: #4D4B4A;
     border-radius: 5px;
     border: none;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
 }
+
 .sorting-main__brand--submit:focus,
-.sorting-main__brand--submit:hover{
+.sorting-main__brand--submit:hover {
     background: #BB9930;
     border: 1px solid #BB9930;
     border-radius: 5px;
     color: #FFFFFF;
 }
-.sorting-main__brand--submit:active{
+
+.sorting-main__brand--submit:active {
     border: 1px solid #BB9930;
     color: #BB9930;
     background: #FFFFFF;
 }
+
 .sorting-main__button--steel {
     width: 139px;
 }
@@ -404,7 +427,7 @@ border: 1px solid #BB9930;
     margin-left: auto;
 }
 
-/*---------------------------catalog-gallery----------------------------------*/
+/*---------------------------------------------------------------catalog-gallery----------------------------------*/
 
 .catalog-gallery__list {
     display: flex;
@@ -574,4 +597,35 @@ border: 1px solid #BB9930;
 
 .display-none {
     display: none;
+}
+
+/*---------------------------------------------------------max-width 680 px----------------------------------------*/
+
+@media (max-width: 680px) {
+
+    .catalog-page-breadcrumbs-list__item {
+        display: none;
+    }
+
+    .breadcrumbs-list__item--mobile {
+        padding-left: 20px;
+        display: block;
+        position: relative;
+    }
+
+    .breadcrumbs-list__item--mobile::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../img/icon__back.png");
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+
 }

@@ -2,16 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cart</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/cart__desktop.css">
+    <title>cart</title>
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
-<section class="cart-all-in-all">
-    <p class="cart-all-in-all__total">Итого:</p>
-    <h4 class="cart-all-in-all__total-price">40 680 ₽</h4>
-    <button class="cart-all-in-all__order-btn">Оформить заказ</button>
+<!-- -----------------------------------------------------------add tablet-desktop version ---------------------------------- -->
+<section class="responsive-version__wrapper">
+    <div class="cart-page__containers">
+        <h1 class="cart-page__title">Корзина</h1>
+        <table>
+            <colgroup>
+                <col class="cart-page-sorting-bloc__items1">
+                <col class="cart-page-sorting-bloc__items2">
+                <col class="cart-page-sorting-bloc__items3">
+                <col class="cart-page-sorting-bloc__items4">
+                <col class="cart-page-sorting-bloc__items5">
+            </colgroup>
+            <tr>
+                <td></td>
+                <td class="cart-page-sorting-bloc">Название</td>
+                <td class="cart-page-sorting-bloc">Кол-во</td>
+                <td class="cart-page-sorting-bloc">Цена</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="a1">
+                    <picture>
+                        <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
+                        <img class="cart-page__product-img" src="img/cart__product--desktop.jpg" alt="product img">
+                    </picture>
+                </td>
+                <td class="a2">
+                    <div>
+                        <h4 class="cart-page-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
+                        <p class="cart-page__product--available-order">Доступен под заказ</p>
+                    </div>
+                </td>
+                <td class="a3">
+                    <div class="cart-page-control-wrapper">
+                        <button class="cart-page-control__btn cart-control__btn--plus"></button>
+                        <p class="cart-page-control__quantity-product">1</p>
+                        <button class="cart-page-control__btn cart-control__btn--minus"></button>
+                    </div>
+                </td>
+                <td class="a4">
+                    <div class="cart-page-price">
+                        <p class="cart-page-price__paragraph">13 560</p>
+                        <p class="cart-page-price__sale">скидка 20%</p>
+                    </div>
+                </td>
+                <td class="a5">
+                    <div class="product-remove">
+                        <button class="product-remove__btn"></button>
+                        <p class="display-none product-remove__hint">удалить товар из корзины</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
+<!-- -----------------------------------------------------------end tablet version---------------------------------->
+<!-- ---------------------------------------------------------------------mobile version ---------------------------------- -->
+<section class="cart-page__mobile-version">
+    <div class="cart-page__mobile-containers">
+        <h1 class="cart-page__title">Корзина</h1>
+        <ul class="sorting-bloc">
+            <li class="sorting-bloc__items">Название</li>
+            <li class="sorting-bloc__items">Кол-во</li>
+            <li class="sorting-bloc__items">Цена</li>
+        </ul>
+        <ul class="cart-page__list">
+            <li class="cart-page__item">
+                <div class="cart-page-product__wrapper">
+                    <picture>
+                        <source media="(max-width: 680px)" srcset="img/cart__product--mobile.jpg">
+                        <img class="cart__product-img" src="img/cart__product--desktop.jpg" alt="product img">
+                    </picture>
+                </div>
+                <div class="cart-page-product__mobile-wrapper">
+                    <div class="cart-page-text">
+                        <h4 class="cart-page-text__title">Нож Ganzo G7362 черный, из кованой стали X12МФ</h4>
+                        <p class="cart-page__product--available-order">Доступен под заказ</p>
+                    </div>
+                    <div class="cart-page-control-wrapper">
+                        <button class="cart-page-control__btn cart-page-control__btn--plus"></button>
+                        <p class="cart-page-control__quantity-product">1</p>
+                        <button class="cart-page-control__btn cart-page-control__btn--minus"></button>
+                    </div>
+                    <div class="cart-page-page-price">
+                        <p class="cart-page-price__paragraph">13 560</p>
+                        <p class="cart-page-price__sale">скидка 20%</p>
+                    </div>
+                </div>
+                <div class="product-remove">
+                    <button class="product-remove__btn"></button>
+                    <p class="display-none product-remove__hint">удалить товар из корзины</p>
+                </div>
+            </li>
+        </ul>
+        <section class="cart-all-in-all">
+            <p class="cart-all-in-all__total">Итого:</p>
+            <h4 class="cart-all-in-all__total-price">40 680 ₽</h4>
+            <button class="cart-all-in-all__order-btn">Оформить заказ</button>
+        </section>
+    </div>
+</section>
+<!-- ------------------------------------------------------------------end mobile version--------------------------------------  -->
 <section class="feedback-form__wrapper display-none">
     <form class="feedback-form">
         <button class="feedback-form__btn-close"></button>
@@ -43,41 +139,6 @@
         </div>
     </form>
 </section>
-<!-- ------------------------------end tablet-desktop version ---------------------------------- -->
-<section class="feedback-form__wrapper display-none">
-    <form class="feedback-form">
-        <button class="feedback-form__btn-close"></button>
-        <h5 class="feedback-form__title">Пожалуйста, заполните поля и наш менеджер
-            свяжется с вами для уточнения деталей заказа</h5>
-        <div class="feedback-form__name-wrapper">
-            <label for="name" class="feedback-form__name-label">Имя</label>
-            <input id="name" class="feedback-form__name-input" name="name" type="text">
-        </div>
-        <div class="feedback-form__phone-wrapper">
-            <label for="phone" class="feedback-form__phone-label">Телефон</label>
-            <input id="phone" class="feedback-form__phone-input" name="tel" type="tel"
-                   placeholder="+7 (999) 999-99-99">
-        </div>
-        <div class="feedback-form__email-wrapper">
-            <label for="email" class="feedback-form__email-label">Почта</label>
-            <input id="email" class="feedback-form__email-input" name="email" type="email"
-                   placeholder="email@mail.ru">
-        </div>
-        <div class="feedback-form__comment-wrapper">
-            <label for="comment" class="feedback-form__comment-label">Комментарий</label>
-            <textarea id="comment" class="feedback-form__comment-input" name="textComment"></textarea>
-        </div>
-        <div class="feedback-form__submit-wrapper">
-            <button class="feedback-form__submit" type="submit">Отправить запрос</button>
-            <p class="feedback-form__agreement">Нажимая кнопку "Отправить запрос", вы принимаете условия<a
-                    href="#"> Оферты</a>
-                и <a href="#">Политики Конфиденциальности</a></p>
-        </div>
-    </form>
-</section>
-</div>
-</section>
-<script src="js/cart__delete-product.js"></script>
 <script src="js/feedback-form.js"></script>
 </body>
 </html>

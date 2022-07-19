@@ -167,6 +167,7 @@ li {
     border: 1px solid #EFEFEF;
     border-radius: 4px;
     position: relative;
+    cursor: pointer;
 }
 
 .sorting-main__button::after {
@@ -181,7 +182,8 @@ li {
     right: 7px;
     top: 15px;
 }
-
+.sorting-main__button--steel:focus,
+.sorting-main__button--steel:hover,
 .sorting-main__button--expensive:focus,
 .sorting-main__button--expensive:hover{
     border: 1px solid #BB9930;
@@ -448,6 +450,7 @@ li {
     top: 36px;
     left: 2px;
     z-index: 1;
+    cursor: pointer;
 }
 .catalog-page__sorting-sub-menu-item{
     font-family: 'Montserrat', sans-serif;

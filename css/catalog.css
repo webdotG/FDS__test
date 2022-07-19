@@ -182,6 +182,11 @@ li {
     top: 15px;
 }
 
+.sorting-main__button--expensive:focus,
+.sorting-main__button--expensive:hover{
+    border: 1px solid #BB9930;
+}
+
 .sorting-main__button--price {
     display: block;
     width: 84px;

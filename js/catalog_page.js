@@ -5,11 +5,11 @@ let sortingBrandForm = document.querySelector(".sorting-main__brand");
 
 sortingPriceBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
-    sortingPriceForm.classList.remove('display-none');
+    sortingPriceForm.classList.toggle('display-none');
 })
 sortingBrandBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
-    sortingBrandForm.classList.remove('display-none');
+    sortingBrandForm.classList.toggle('display-none');
 })
 
 
